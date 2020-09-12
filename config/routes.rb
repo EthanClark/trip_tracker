@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'trips#index'
+
+  resources :trips do
+  resources :reservations
+  end
+  
+  resources :locations do
+  resources :reservations
+  end
 end
