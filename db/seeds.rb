@@ -1,5 +1,5 @@
 10.times do
-  locations = Locations.create(
+  location = Location.create(
     loc_name: Faker::Games::WarhammerFantasy.location
   )
   5.times do
