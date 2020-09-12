@@ -5,10 +5,8 @@
 <h2> Party Size: <%= @trip.party_size %> </h2>
 
 <p>what do you want to do</p>
-<%= link_to 'Edit current trip', edit_trip_path(@trip) %>
+<%= link_to 'Edit Trip', edit_trip_path(@trip) %>
 <br />
-<%= link_to 'Delete trip', @trip, method: :delete %>
-<br/>
-<%= link_to 'Back to Trips', trips_path() %>
+<%= link_to 'Delete Trip', @trip, method: :delete %>
 <br />
-<%= link_to 'View locations', locations_path() %>
+<%= link_to 'View locations', locations_path %>
