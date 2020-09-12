@@ -1,12 +1,12 @@
 <%= form_with(model: @trip, local: true, class: 'ui form') do |f| %>
   <div class='field'>
-    <%= f.label :trip %>
-    <%= f.text_field :trip, required: true %>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true %>
   </div>
   <%= f.submit nil, class: "ui secondary button" %>
 <% end %>
 
-# <div class="ui four column doubling stackable grid container">
+<%# # <div class="ui four column doubling stackable grid container">
 #   <div class="column">
 #     <p></p>
 #     <p></p>
@@ -23,4 +23,4 @@
 #     <p></p>
 #     <p></p>
 #   </div>
-# </div>
+# </div> %>

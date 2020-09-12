@@ -1,10 +1,10 @@
-
+<%= link_to 'Locations', locations_path %>
+<%= link_to 'Reservations', trip_reservations_path %>
 <h1>Trips</h1>
-<%= link_to 'Create new trip', new_trip_path %>
-<ul>
-  <% @trip.each do |trip| %>
-    <li>
+<%= link_to 'Create New Trip', new_trip_path %>
+
+<% @trips.each do |trip| %>
+  <ul>
       <%= link_to trip.name, trip %>
-    </li>
-  <% end %>
-</ul>
+  </ul>
+<% end %>
