@@ -3,6 +3,8 @@
     loc_name: Faker::Games::WarhammerFantasy.location
     loc_type: Faker::Games::ElderScrolls.region
     main_activity: Faker::Esport.game
+    first_name: Faker::Name.first_name  
+    last_name: Faker::Name.last_name  
   )
   5.times do
     trip = Trip.create(
