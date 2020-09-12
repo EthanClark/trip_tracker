@@ -3,11 +3,13 @@
 <%= link_to 'Add Location', new_location_path %>
 <br />
 <h2><%= @locations.length <= 0 ? "No Locations" : "" %></h2> 
-<ul>
+
   <% @locations.each do |location| %>
+  <ul>
     <li>
-      <%= link_to location.loc_name, location %>
+        <%= link_to location.loc_name, location_path(location) %>
     </li>
-  <% end %>
-</ul>
+  </ul>  
+<% end %>
+
 

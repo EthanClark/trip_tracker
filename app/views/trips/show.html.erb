@@ -1,13 +1,14 @@
-<h1><%= @trip.trip_name %></h1>
+<h1> <%= @trip.trip_name %> </h1>
+
+<h2> Traveler's Name: <%= @trip.first_name %> </h2>
+
+<h2> Party Size: <%= @trip.party_size %> </h2>
+
 <p>what do you want to do</p>
-<<<<<<< HEAD
-<%= link_to 'Edit Trip', edit_trip_path(@trip) %>
-<br />
-<%= link_to 'Delete Trip', @trip, method: :delete %>
-=======
 <%= link_to 'Edit current trip', edit_trip_path(@trip) %>
 <br />
 <%= link_to 'Delete trip', @trip, method: :delete %>
->>>>>>> 39b3e26... trip_fuse
+<br/>
+<%= link_to 'Back to Trips', trips_path() %>
 <br />
-<%= link_to 'View locations', trip_location_path(@trip) %>
+<%= link_to 'View locations', locations_path() %>

@@ -43,6 +43,6 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
   end
   def trip_params
-    params.require(:trip).permit(:trip_name)
+    params.require(:trip).permit(:trip_name, :first_name, :last_name, :party_size)
   end
 end

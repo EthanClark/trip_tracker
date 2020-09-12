@@ -2,8 +2,15 @@
 
 <%= form_for @location do |f| %>
 
-  <%= f.label :loc_name %>
-  <%= f.text_field :loc_name %>
+  <%= f.label :location_name %>
+  <%= f.text_field :loc_name, require: true, placeholder: 'Location Name'%>
+
+  <%= f.label :location_type %>
+  <%= f.text_field :loc_type, require: true, placeholder: 'Location Type' %>
+
+  <%= f.label :main_activity %>
+  <%= f.text_field :main_activity, require: true, placeholder: 'Main Attractions/Activities' %>
+
   <%= f.submit %>
 
 

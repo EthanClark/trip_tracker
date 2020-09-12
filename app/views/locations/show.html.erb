@@ -1,7 +1,13 @@
-<h1><%= @location.loc_name %></h1>
+<h1><%= @location.loc_name.capitalize %></h1>
 <br/>
+<h2> <%= @location.loc_type %> </h2>
+<br/>
+<h2> <%= @location.main_activity %> </h2>
 
-<%= link_to 'edit location', edit_location_path(@location) %>
-<%= link_to 'delete location', location_path(@location), method: :delete %>
+<%= link_to 'Edit Location', edit_location_path(@location) %>
+<%= link_to 'Delete Location', location_path(@location), method: :delete %>
+<br/>
+<br/>
+<%= link_to 'Back',locations_path() %>
 
 

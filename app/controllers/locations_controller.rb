@@ -42,6 +42,6 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
   end
   def location_params
-    params.require(:location).permit(:loc_name)
+    params.require(:location).permit(:loc_name, :loc_type, :main_activity)
   end
 end
