@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= link_to 'Locations', locations_path %>
 <%= link_to 'Reservations', trip_reservations_path %>
 <h1>Trips</h1>
@@ -8,3 +9,21 @@
       <%= link_to trip.trip_name, trip %>
   </ul>
 <% end %>
+=======
+<head> 
+<link ="stylesheet" href ="trips.scss">
+</head>
+
+<h1 class = "header" >@trip.trip_name</h1>
+<div class="container">
+
+<div class= create_trip> <%= link_to 'Create Trip', new_trip_path(@trip) %></div>
+<ul>
+  <% @trips.each do |trip| %>
+    <li>
+      <%= link_to trip, trip_path(trip) %>
+    </li>
+  <% end %>
+</ul></div>
+
+>>>>>>> 39b3e26... trip_fuse

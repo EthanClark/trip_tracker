@@ -1,3 +1,34 @@
 // Place all the styles related to the trips controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+// .container{
+//   display: grid;
+//   justify-items: center;;
+//   grid-template-columns: 100px 75px 100px 100px;
+//   grid-template-rows: auto;
+//   grid-template-areas: 
+//   "header header header header"
+//   "main main . sidebar"
+//   "footer";
+// }
+.header{
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;;
+}
+.create_trip{
+  background-color: aqua;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  :hover{
+    color: rgb(7, 8, 8);
+  }
+  :link{
+    color:white;
+  }
+}
