@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_194636) do
+ActiveRecord::Schema.define(version: 2020_09_12_203156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_09_12_194636) do
     t.string "loc_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "loc_type"
+    t.string "main_activity"
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -26,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_09_12_194636) do
     t.bigint "location_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "res_date"
     t.index ["location_id"], name: "index_reservations_on_location_id"
     t.index ["trip_id"], name: "index_reservations_on_trip_id"
   end
@@ -43,6 +46,8 @@ ActiveRecord::Schema.define(version: 2020_09_12_194636) do
     t.string "trip_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "party_size"
+    t.boolean "trip_deposit"
   end
 
   add_foreign_key "reservations", "locations"
