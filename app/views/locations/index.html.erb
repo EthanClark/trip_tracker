@@ -1,2 +1,13 @@
-<h1>Locations#index</h1>
+<h1>Locations List</h1>
+
+<%= link_to 'Add Location', new_location_path %>
+<br />
+<h2><%= @locations.length <= 0 ? "No Locations" : "" %></h2> 
+<ul>
+  <% @locations.each do |location| %>
+    <li>
+      <%= link_to location.loc_name, location %>
+    </li>
+  <% end %>
+</ul>
 

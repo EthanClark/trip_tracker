@@ -1,2 +1,12 @@
-<h1>Locations#edit</h1>
-<p>Find me in app/views/locations/edit.html.erb</p>
+<h1>Edit Locations</h1>
+
+<%= form_for @location do |f| %>
+
+  <%= f.label :loc_name %>
+  <%= f.text_field :loc_name, require: true, placeholder: 'location name' %>
+  <%= f.submit %>
+
+  <% end %>
+
+
+

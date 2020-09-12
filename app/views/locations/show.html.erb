@@ -1,2 +1,7 @@
-<h1>Locations#show</h1>
-<p>Find me in app/views/locations/show.html.erb</p>
+<h1><%= @location.loc_name %></h1>
+<br/>
+
+<%= link_to 'edit location', edit_location_path(@location) %>
+<%= link_to 'delete location', location_path(@location), method: :delete %>
+
+
