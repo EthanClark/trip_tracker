@@ -1,4 +1,4 @@
-class Reversation < ApplicationRecord
+class Reservation < ApplicationRecord
   belongs_to :trip
   belongs_to :location
 end
