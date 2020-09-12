@@ -27,8 +27,35 @@
   font-size: 16px;
   :hover{
     color: rgb(7, 8, 8);
+    background-color: rgb(85, 219, 236);
+    border-radius: 15px;
   }
   :link{
     color:white;
   }
+}
+a{
+  text-align: center;
+  display: inline;
+  color:darkblue;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+w2{
+  display: block;
+  padding: 20px;
+  background-color: rgb(141, 86, 15);
+  text-emphasis-color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+}
+a:hover{
+  background-color: rgb(202, 126, 27);
+  text-decoration: underline;
+  border-radius: 20px;
+}
+
+.bre{
+  padding:20px;
 }

@@ -1,37 +1,9 @@
 <%= form_with(model: @trip, local: true, class: 'ui form') do |f| %>
   <div class='field'>
-<<<<<<< HEAD
-    <%= f.label :name %>
-    <%= f.text_field :name, required: true %>
-  </div>
-  <%= f.submit nil, class: "ui secondary button" %>
-<% end %>
-
-<%# # <div class="ui four column doubling stackable grid container">
-#   <div class="column">
-#     <p></p>
-#     <p></p>
-#   </div>
-#   <div class="column">
-#     <p></p>
-#     <p></p>
-#   </div>
-#   <div class="column">
-#     <p></p>
-#     <p></p>
-#   </div>
-#   <div class="column">
-#     <p></p>
-#     <p></p>
-#   </div>
-# </div> %>
-=======
     <%= f.label :trip_name %>
     <%= f.text_field :trip_name, required: true %>
   </div>
+  <div class = bre>
   <%= f.submit nil, class: "ui secondary button" %>
-  <footer>
-  <%#link_to 'trip' root_path %>
-  <footer>
+  </div>
 <% end %>
->>>>>>> 39b3e26... trip_fuse
