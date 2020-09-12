@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ReversationTest < ActiveSupport::TestCase
+class ReservationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
