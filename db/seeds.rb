@@ -1,18 +1,19 @@
-<<<<<<< HEAD
-# faker::Movies::PrincessBride
-=======
 10.times do
   location = Location.create(
     loc_name: Faker::Games::WarhammerFantasy.location
+    loc_type: Faker::Games::ElderScrolls.region
+    main_activity: Faker::Esport.game
   )
   5.times do
     trip = Trip.create(
-      name: Faker::Movies::PrincessBride.quote
+      trip_name: Faker::Movies::PrincessBride.quote
+      party_size: Faker::Number.between(from: 1, to: 10)
+      trip_deposit: Faker::Boolean.boolean
     )
     Reservation.create(
+      res_date: Faker::Date.forward(days: 89)
       trip_id: trip.id,
       location_id: location.id
     )
   end
 end
->>>>>>> b009b9035267c3b74e49103530cfde6a7804847a
